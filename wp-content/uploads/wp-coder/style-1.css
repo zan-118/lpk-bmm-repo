@@ -1,0 +1,144 @@
+/* Reset margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif; /* Ganti dengan font yang sesuai */
+  line-height: 1.6;
+  color: #333; /* Warna teks utama */
+}
+
+.container {
+  max-width: 1200px; /* Sesuaikan lebar maksimum */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Styles */
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #c4def6; /* Warna teks navbar link saat hover */
+}
+
+/* Section Styles */
+#home {
+  background-image: url("./img/rm222batch2-mind-03.jpg");
+}
+
+#reasons {
+  background-image: url("./img/v915-techi-001-a.jpg");
+}
+
+#contact {
+  background-image: url("./img/rm222batch2-mind-03.jpg");
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #0056b3; /* Warna teks judul section */
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efek hover card */
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333; /* Warna teks judul card */
+}
+
+.card-text {
+  color: #666; /* Warna teks konten card */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-address {
+  font-size: 14px;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background: #007bff;
+  color: #fff;
+  font-size: 24px;
+  line-height: 40px;
+  transition: background 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+  background: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+}
