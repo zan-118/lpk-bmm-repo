@@ -25,4 +25,13 @@ function add_custom_favicon() {
     echo '<link rel="icon" href="https://lpkbinamudamandiri.com/wp-content/uploads/2023/11/favicon-32x32-1.png" type="image/x-icon" />' . "\n";
 }
 add_action('wp_head', 'add_custom_favicon');
+
+// Membersihkan seluruh cache
+function clear_all_cache() {
+    if (function_exists('wp_cache_flush')) {
+        wp_cache_flush();
+    }
+}
+add_action('init', 'clear_all_cache');
+
 ?>
